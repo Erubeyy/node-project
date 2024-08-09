@@ -1,0 +1,23 @@
+{
+  "name": "apis-rest",
+  "version": "1.0.0",
+  "description": "API REST Learning",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erubey",
+  "license": "ISC",
+  "devDependencies": {
+    "semistandard": "^17.0.0"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.19.2",
+    "zod": "3.23.8"
+  },
+  "eslintConfig": {
+    "extends": "semistandard"
+  }
+}

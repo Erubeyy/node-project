@@ -1,0 +1,32 @@
+### Get all Movies
+GET http://localhost:1234/movies
+
+### Get movie by Id
+GET http://localhost:1234/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+
+### Get all movies by genre
+GET http://localhost:1234/movies?genre=crime
+
+### POST create a movie
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": "The Godfather",
+    "year": 1975,
+    "director": "Francis Ford Coppola",
+    "duration": 175,
+    "poster": "https://th.bing.com/th/id/R.6706975fc1180fc6b65e3d6b58d976a9?rik=09gzgDf%2b%2fye2fw&pid=ImgRaw&r=0",
+    "genre": [
+      "Crime",
+      "Drama"
+    ]
+}
+
+### PATCH update data from the selected object
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+  "year": 1993
+}
